@@ -1,0 +1,33 @@
+version 2
+run Double-1-20150802-15:09:05-3081
+attr configname Double
+attr datetime 20150802-15:09:05
+attr experiment Double
+attr inifile ./simulations/single/omnetpp1.ini
+attr iterationvars $0=50m
+attr iterationvars2 "$0=50m, $repetition=0"
+attr measurement $0=50m
+attr network lte_d2d.simulations.networks.onepair
+attr processid 3081
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 1
+attr seedset 1
+
+scalar onepair.master.nic.mac 	macCellThroughputUl:lteRate 	399.95895752103
+attr source  macCellThroughputUl
+attr title  "Cell Throughput at the MAC layer UL, lteRate"
+attr unit  Bps
+scalar onepair.slave.nic.mac 	macThroughputUl:lteRate 	399.95895752103
+attr source  macThroughputUl
+attr title  "Throughput at the MAC layer UL, lteRate"
+attr unit  Bps
+scalar onepair.slave.nic.mac 	macDelayUl:lteAvg 	0.0040041046690607
+attr source  macDelayUl
+attr title  "Delay at the MAC layer UL, lteAvg"
+attr unit  s
+scalar onepair.slave.nic.mac 	SINR_dl:lteAvg 	37.464658673082
+attr source  SINR_dl
+attr title  "Average SINR reported in DL, lteAvg"
+attr unit  db

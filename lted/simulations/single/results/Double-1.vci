@@ -1,0 +1,23 @@
+file 102507 1438520950                                          
+version 2
+run Double-1-20150802-15:09:05-3081
+attr configname Double
+attr datetime 20150802-15:09:05
+attr experiment Double
+attr inifile ./simulations/single/omnetpp1.ini
+attr iterationvars $0=50m
+attr iterationvars2 "$0=50m, $repetition=0"
+attr measurement $0=50m
+attr network lte_d2d.simulations.networks.onepair
+attr processid 3081
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 1
+attr seedset 1
+
+vector 2  onepair.master.nic.phy  SINR_dlvect:vector  ETV
+attr source  SINR_dlvect
+attr title  "vector of SINR, vector"
+attr unit  db
+2	563 101944 7 170294 0.002 19.994 3333 37.464658673085 37.464658673085 124869.70735738 4678200.964753

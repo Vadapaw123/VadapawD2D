@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/lted/simulations/single/results/Double-*.vec"/>
+    <inputs name="/lted/simulations/single/results/Double-*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="SINR_dl:lteAvg onepair.slave.nic.mac">
+      <items xsi:type="scave:Add" filterPattern="module(onepair.slave.nic.mac) AND name(SINR_dl:lteAvg)"/>
+      <items xsi:type="scave:Add" filterPattern="module(onepair.slave.nic.mac) AND name(SINR_dl:lteAvg)"/>
+      <items xsi:type="scave:Add" filterPattern="module(onepair.slave.nic.mac) AND name(SINR_dl:lteAvg)"/>
+      <items xsi:type="scave:Add" filterPattern="module(onepair.slave.nic.mac) AND name(SINR_dl:lteAvg)"/>
+      <items xsi:type="scave:Add" filterPattern="module(onepair.slave.nic.mac) AND name(SINR_dl:lteAvg)"/>
+      <items xsi:type="scave:BarChart" name="SINR_dl:lteAvg onepair.slave.nic.mac">
+        <properties name="Graph.Title" value="SINR versus Distance"/>
+        <properties name="X.Axis.Title" value="Distance "/>
+        <properties name="Y.Axis.Title" value="SINR (dbm)"/>
+        <properties name="Axes.Grid" value="All"/>
+        <properties name="Legend.Display" value="true"/>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets/>
+</scave:Analysis>
